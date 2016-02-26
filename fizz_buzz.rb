@@ -18,7 +18,7 @@ class FizzBuzz
     return result
   end
 
-  def addRule(number, string)
+  def add_rule(number, string)
     @multiple_rule[number] = string
   end
 

@@ -52,18 +52,18 @@ end
     expect(rules[3]).to be == 'fizz'
   end
   it 'should add a rule to the game'do
-    @fizz_buzz.addRule(2, 'toto')
+    @fizz_buzz.add_rule(2, 'toto')
     expect(@fizz_buzz.get_rules[2]). to be == 'toto'
     expect(@fizz_buzz.get_rules.length).to eq (3)
   end
   context 'After adding the rule for multiple of 2'do
     it 'should return toto for int 2'do
-      @fizz_buzz.addRule(2, 'toto')
+      @fizz_buzz.add_rule(2, 'toto')
       expect(@fizz_buzz.transform_normal_number_to_fizz_buzz_number(2)).to eq ('toto')
     end
 
     it 'should return fizzbuzztoto for int 60' do
-      @fizz_buzz.addRule(2, 'toto')
+      @fizz_buzz.add_rule(2, 'toto')
       expect(@fizz_buzz.transform_normal_number_to_fizz_buzz_number(60)).to eq ('fizzbuzztoto')
     end
 
