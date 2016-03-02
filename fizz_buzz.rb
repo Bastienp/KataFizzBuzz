@@ -14,7 +14,6 @@ class FizzBuzz
     if result == ''
       result = number.to_s
     end
-
     return result
   end
 
@@ -27,9 +26,9 @@ class FizzBuzz
   end
 
   def transform_array_numbers(arrayOfNumbers)
-    resultArray =''
-    arrayOfNumbers.each { |number| resultArray += transform_normal_number_to_fizz_buzz_number(number)}
-    return resultArray
+    result_array =''
+    arrayOfNumbers.each { |number| result_array += transform_normal_number_to_fizz_buzz_number(number) }
+    return result_array
   end
 
 end
