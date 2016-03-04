@@ -8,7 +8,7 @@ class FizzBuzz
     result = ''
     @multiple_rule.each do |multiple, string|
       if number % multiple == 0
-        result += strin
+        result += string
       end
     end
     if result == ''
